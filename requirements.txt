@@ -1,4 +1,7 @@
-google-generativeai
+google-genai
 python-dotenv
 requests
 streamlit
+langchain
+langchain-google-genai
+langchain-tavily
