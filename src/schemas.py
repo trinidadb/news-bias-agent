@@ -19,7 +19,7 @@ class BiasAnalysisOutput(BaseModel):
     reasoning: str = Field(description="2-3 sentence explanation of the analysis")
 
 
-class ComparativeBiasAnalysis(BaseModel):
+class ComparativeBiasAnalysisOutput(BaseModel):
     """For comparing multiple headlines"""
 
     headlines_analyzed: int

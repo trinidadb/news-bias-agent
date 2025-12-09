@@ -1,0 +1,24 @@
+Agent flow
+1) User inputs --> topic and country, for example: climate change/USA
+2) the agent searches for top communications media in that country (for now just 4 media), presents them to the user and ask if they want to continue generating an inform. The agent has to provide info in what he based its selection of the media
+3) if the user says no, agent ask if they wanna change topic/location or keep it the same and repeat step 2.
+4) if the user says yes it's starts analyzing the topic in each media. Also present to the user which news it analyzed
+5) present a structured inform
+6) ask if they wanna add an extra media to compare.
+7) if user says no, finish
+8) if the user says yes and passes a media --> check if that media information is available, if yes, proceed searching for the topic
+9) add it to the inform and compare in detail how that new media compares with the others in the approach
+
+the inform should be presented as a table (for numerica values) and can also be text when wanting to provide internal insights. It would also be intresting to answer this questions:
+   - What's consensus vs controversial?
+   - How does framing differ?
+   - What's included/excluded by whom regading to that topic?
+
+In the report do a:
+   - Source-by-source breakdown
+   - Comparative analysis
+   - Citations/links
+
+psql -U key_admin -d my-db_keycloak -c "UPDATE realm SET ssl_required = 'NONE' WHERE name = 'master';"
+
+node --unhandled-rejections=strict index.js

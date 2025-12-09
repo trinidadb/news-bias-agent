@@ -18,7 +18,7 @@ class NewsDataLoader:
         if category:
             filtered = self.data[self.data['category'] == category]
             return filtered.sample(n=min(n, len(filtered)), random_state=random_state)
-        return self.data.sample(n=n, random_state=random_state)
+        return self.data.sample(n=min(n, len(self.data)), random_state=random_state)
 
     def get_high_bias_categories(self, n=10):
         """Get samples from categories likely to show bias"""

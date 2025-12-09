@@ -45,7 +45,7 @@ class BiasAnalyzer:
             print(f"Error analyzing: {e}")
             return self._error_response(str(e))
 
-    def analyze_news_batch(self, articles: List[Dict], max_concurrency: int = 5) -> List[BiasAnalysisOutput]:
+    def analyze_news_batch(self, articles: List[Dict], max_concurrency: int = 5) -> List[BiasAnalysisOutput]: # TODO: consider using num_cores = os.cpu_count() as the value for max_concurrency
         inputs = [
             {
                 "headline": article.get('headline', ''),
