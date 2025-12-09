@@ -18,7 +18,3 @@ In the report do a:
    - Source-by-source breakdown
    - Comparative analysis
    - Citations/links
-
-psql -U key_admin -d my-db_keycloak -c "UPDATE realm SET ssl_required = 'NONE' WHERE name = 'master';"
-
-node --unhandled-rejections=strict index.js
