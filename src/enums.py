@@ -16,6 +16,13 @@ class SortBy(str, Enum):
     POPULARITY = "popularity"
     PUBLISHED_AT = "publishedAt"
 
+
+class SearchIn(str, Enum):
+    TITLE = "title"
+    DESCRIPTION = "description"
+    CONTENT = "content"
+
+
 class Language(str, Enum):
     ARABIC = 'ar'
     GERMAN = 'de'
@@ -31,6 +38,7 @@ class Language(str, Enum):
     SWEDISH = 'sv'
     UD = 'ud'  # 'ud' is non-standard, likely Undefined in this API
     CHINESE = 'zh'
+
 
 class Country(str, Enum):
     UNITED_ARAB_EMIRATES = 'ae'
